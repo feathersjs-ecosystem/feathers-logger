@@ -1,0 +1,61 @@
+{
+  "name": "feathers-logger",
+  "description": "Convenient error handling for Feathers services.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/feathersjs/feathers-logger",
+  "author": {
+    "name": "Eric Kryski",
+    "email": "e.kryski@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "David Luecke",
+      "email": "daff@neyeon.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feathersjs/feathers-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feathersjs/feathers-logger/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/feathersjs/feathers-logger/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/logger",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "start": "grunt"
+  },
+  "devDependencies": {
+    "grunt-cli": "~0.1.7",
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.5.1",
+    "grunt-contrib-jshint": "~0.x",
+    "grunt-simple-mocha": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "feathers": ">= 0.3.1",
+    "supertest": "~0.9.0",
+    "socket.io-client": "^0.9.16"
+  },
+  "peerDependencies": {
+    "feathers": "~0.4.0"
+  },
+  "keywords": [
+    "feathers-plugin",
+    "feathers",
+    "logger",
+    "loggin"
+  ],
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "uberproto": "~1.1.1"
+  }
+}
