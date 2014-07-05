@@ -8,40 +8,73 @@ Install the module with: `npm install feathers-logger --save`
 
 ```js
 var feathers = require('feathers');
+var winston = require('winston');
 var logger = require('feathers-logger');
 
-var app = feathers().configure(logger)
-  .use('/users', userService)
-  .use('/posts', postsService)
-  .use(logger);
+var app = feathers()
+  .configure(logger())
+  .use('/users', userService);
 ```
 
 ## Documentation
 
-__Definition and use with REST URIs:__
+`Feathers-logger` is just a simple wrapper for any logger so that you can conveniently do `app.log()`. There are 4 methods provided for you to use:
+
+* `app.log()`
+* `app.info()`
+* `app.warn()`
+* `app.error()`
+
+They have graceful fallback to the [core nodejs console methods](http://nodejs.org/api/stdio.html).
+
+#### Vanilla Usage
 
 ```js
-// Both associations should only work if there is a /users service registered already
-app.use('/users', userService)
-  .use('/posts', postsService)
-  .use('/accounts', accountService);
+var feathers = require('feathers');
+var logger = require('feathers-logger');
+var memory = require('feathers-memory');
 
-// Pass service name in an array
-// Calls postsService.findAll({ userId: <userId> })
-app.associate('/users/:userId/posts', ['posts']);
+var app = feathers()
+    .configure(logger())
+    .use('/users', memory)
+    .configure(feathers.errors());
 
-// Calls userService.get(<userId>) then calls
-// accountService.get(user.account)
-app.associate('/users/:userId/account', 'accounts');
+app.log('Server Started');
 ```
 
-__For SocketIO:__
+#### Using With [Winston](https://github.com/flatiron/winston)
 
 ```js
-socket.emit('/users/:userId/posts', { userId: 123 }, function(error, posts) {
-});
+var winston = require('winston');
+var feathers = require('feathers');
+var logger = require('feathers-logger');
+var memory = require('feathers-memory');
+
+var app = feathers()
+    .configure(logger(winston))
+    .use('/users', memory)
+    .configure(feathers.errors());
+
+app.log('Server Started');
 ```
 
+#### Using With [Morgan](https://github.com/expressjs/morgan)
+
+```js
+var morgan = require('morgan');
+var feathers = require('feathers');
+var logger = require('feathers-logger');
+var memory = require('feathers-memory');
+
+var app = feathers()
+    .configure(logger(morgan({
+      format: 'dev'
+    })))
+    .use('/users', memory)
+    .configure(feathers.errors());
+
+app.log('Server Started');
+```
 
 ## Examples
 See [examples directory](https://github.com/feathersjs/feathers-logger/tree/master/examples).
@@ -50,7 +83,9 @@ See [examples directory](https://github.com/feathersjs/feathers-logger/tree/mast
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+__0.1.0__
+
+- Initial release
 
 ## License
 Copyright (c) 2014 [Eric Kryski](https://github.com/ekryski)

@@ -1,14 +1,13 @@
 'use strict';
 
 var assert = require('assert');
-
 var feathers = require('feathers');
-var error = require('../lib/errors');
+var logger = require('../lib/logger');
 
-describe('Feathers errors', function () {
-  it('initializes .associate', function () {
-    var app = feathers().configure(errors());
+describe('Feathers logger', function () {
+  it('initializes .log', function () {
+    var app = feathers().configure(logger());
 
-    assert.equal(typeof app.error, 'function', 'error method got added');
+    assert.equal(typeof app.log, 'function', 'log method got added');
   });
 });

@@ -40,10 +40,7 @@
     "grunt-release": "~0.5.1",
     "grunt-contrib-jshint": "~0.x",
     "grunt-simple-mocha": "~0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "feathers": ">= 0.3.1",
-    "supertest": "~0.9.0",
-    "socket.io-client": "^0.9.16"
+    "grunt-contrib-watch": "~0.5.3"
   },
   "peerDependencies": {
     "feathers": "~0.4.0"
@@ -52,10 +49,9 @@
     "feathers-plugin",
     "feathers",
     "logger",
-    "loggin"
+    "logging"
   ],
   "dependencies": {
-    "lodash": "~2.4.1",
     "uberproto": "~1.1.1"
   }
 }
