@@ -1,6 +1,6 @@
 # feathers-logger [![Build Status](https://secure.travis-ci.org/feathersjs/feathers-logger.png?branch=master)](http://travis-ci.org/feathersjs/feathers-logger)
 
-> Logging mixin for Feathers.
+> Logging mixin for a Feathers app.
 
 ## Getting Started
 
@@ -86,6 +86,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 __0.1.0__
 
 - Initial release
+- Vanilla logging support
+- Added documentation & example
+- Support for Winston logger
+- Support for Morgan logger
 
 ## License
 Copyright (c) 2014 [Eric Kryski](https://github.com/ekryski)
