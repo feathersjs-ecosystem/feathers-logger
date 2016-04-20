@@ -2,6 +2,8 @@
 
 > Logging mixin for a Feathers app.
 
+## This module is not compatible with Feathers 2 currently. It will be updated shortly.
+
 ## Getting Started
 
 Install the module with: `npm install feathers-logger --save`
