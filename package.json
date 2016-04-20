@@ -41,7 +41,7 @@
     "grunt-contrib-jshint": "~0.x",
     "grunt-simple-mocha": "~0.4.0",
     "grunt-contrib-watch": "~0.5.3",
-    "feathers": ">= 0.3.1"
+    "feathers": "~0.3.1"
   },
   "peerDependencies": {
     "feathers": ">=1.0.x"
