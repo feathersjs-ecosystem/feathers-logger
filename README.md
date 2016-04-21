@@ -38,8 +38,7 @@ var memory = require('feathers-memory');
 
 var app = feathers()
     .configure(logger())
-    .use('/users', memory)
-    .configure(feathers.errors());
+    .use('/users', memory);
 
 app.log('Server Started');
 ```
@@ -54,8 +53,7 @@ var memory = require('feathers-memory');
 
 var app = feathers()
     .configure(logger(winston))
-    .use('/users', memory)
-    .configure(feathers.errors());
+    .use('/users', memory);
 
 app.log('Server Started');
 ```
@@ -72,8 +70,7 @@ var app = feathers()
     .configure(logger(morgan({
       format: 'dev'
     })))
-    .use('/users', memory)
-    .configure(feathers.errors());
+    .use('/users', memory);
 
 app.log('Server Started');
 ```
