@@ -2,15 +2,12 @@
 
 > Logging mixin for a Feathers app.
 
-## This module is not compatible with Feathers 2 currently. It will be updated shortly.
-
 ## Getting Started
 
 Install the module with: `npm install feathers-logger --save`
 
 ```js
 var feathers = require('feathers');
-var winston = require('winston');
 var logger = require('feathers-logger');
 
 var app = feathers()
@@ -76,12 +73,22 @@ app.log('Server Started');
 ```
 
 ## Examples
-See [examples directory](https://github.com/feathersjs/feathers-logger/tree/master/examples).
+See [example directory](https://github.com/feathersjs/feathers-logger/tree/master/example).
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using the `npm test`.
 
 ## Release History
+
+__0.2.0__
+
+- cleans up a bunch of stuff
+- makes plugin consistent with other plugins
+- upgrades to latest uberproto
+- removes feathers as peer dependency
+- removes gulp from the equation
+- tests against feathers 2
+
 __0.1.0__
 
 - Initial release
