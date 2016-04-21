@@ -1,14 +1,15 @@
 var feathers = require('feathers');
 var morgan = require('morgan');
-var logger = require('../lib/logger');
+var logger = require('../lib');
 var app = feathers();
 
 var userService = {
-  find: function(params, callback) {
+  find: function(params) {
     app.log('info', 'Your params are:', { foo: 'bar' });
     app.warn('I\'m warning you... there is an error coming.');
     app.error('Oh noes!!');
-    callback(null, []);
+    
+    return Promise.resolve([]);
   },
 
   setup: function(app){
@@ -22,6 +23,6 @@ app.configure(logger(morgan({
    .configure(feathers.rest())
    .use('/users', userService);
 
-app.listen(8080);
+app.listen(3030);
 
-app.info('App listening on 127.0.0.1:8080');
+app.info('App listening on 127.0.0.1:3030');
