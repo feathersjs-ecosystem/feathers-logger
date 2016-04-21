@@ -1,13 +1,29 @@
 'use strict';
 
-var assert = require('assert');
+var expect = require('chai').expect;
 var feathers = require('feathers');
-var logger = require('../lib/logger');
+var logger = require('../lib/');
 
 describe('Feathers logger', function () {
-  it('initializes .log', function () {
-    var app = feathers().configure(logger());
+  var app;
 
-    assert.equal(typeof app.log, 'function', 'log method got added');
+  before(function(){
+    app = feathers().configure(logger());
+  });
+  
+  it('initializes .log', function () {
+    expect(typeof app.log).to.equal('function');
+  });
+
+  it('initializes .info', function () {
+    expect(typeof app.info).to.equal('function');
+  });
+
+  it('initializes .warn', function () {
+    expect(typeof app.warn).to.equal('function');
+  });
+
+  it('initializes .error', function () {
+    expect(typeof app.error).to.equal('function');
   });
 });
