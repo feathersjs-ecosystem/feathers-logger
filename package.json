@@ -1,7 +1,7 @@
 {
   "name": "feathers-logger",
   "description": "Simple logging for feathers",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/feathersjs/feathers-logger",
   "main": "lib/",
   "keywords": [
