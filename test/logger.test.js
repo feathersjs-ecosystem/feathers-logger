@@ -7,10 +7,10 @@ var logger = require('../lib/');
 describe('Feathers logger', function () {
   var app;
 
-  before(function(){
+  before(function () {
     app = feathers().configure(logger());
   });
-  
+
   it('initializes .log', function () {
     expect(typeof app.log).to.equal('function');
   });

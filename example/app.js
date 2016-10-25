@@ -4,22 +4,22 @@ var logger = require('../lib');
 var app = feathers();
 
 var userService = {
-  find: function(params) {
+  find: function (params) {
     app.log('info', 'Your params are:', { foo: 'bar' });
     app.warn('I\'m warning you... there is an error coming.');
     app.error('Oh noes!!');
-    
+
     return Promise.resolve([]);
   },
 
-  setup: function(app){
+  setup: function (app) {
     this.app = app;
   }
 };
 
 app.configure(logger(morgan({
-     format: 'dev'
-   })))
+  format: 'dev'
+})))
    .configure(feathers.rest())
    .use('/users', userService);
 

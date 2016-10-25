@@ -32,19 +32,28 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
-    "jshint": "jshint lib/. test/. --config",
+    "lint": "eslint-if-supported semistandard --fix",
     "mocha": "mocha --recursive test/",
-    "test": "npm run jshint && npm run mocha",
+    "test": "npm run lint && npm run mocha",
     "start": "node example/app"
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": [
+      "/lib"
+    ]
   },
   "dependencies": {
     "uberproto": "^1.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint-if-supported": "^1.0.1",
     "feathers": "~2.0.0",
-    "jshint": "^2.9.1",
     "mocha": "^2.4.5",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "semistandard": "^9.1.0"
   }
 }
