@@ -1,7 +1,12 @@
 language: node_js
 node_js:
-  - 'node'
-  - 'iojs'
+- node
+- '6'
+- '4'
+- iojs
+- '0.12'
+- '0.10'
+sudo: false
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:
@@ -9,3 +14,8 @@ after_script:
 addons:
   code_climate:
     repo_token: e596849b49c64c47dd164d10304d03bf9775412bd87ad601613f34b3d7509c76
+notifications:
+  email: false
+  slack:
+    rooms:
+      secure: RbuszjRM2ygS6mqrJ6Zjj3JuLMSmB3xxwyDVre9fQ9noTAR6T9pE4yH7YNd9E045p0H0sQrWqbyCw6whvamUui5J9XPdZ1Sw6W8pHDip8Bi3TCPUDFS1l6X6m9+pIoEKrf02CddAJdo2guN31cQ18B//kWjxFxIGGYMG3wCC55w=
