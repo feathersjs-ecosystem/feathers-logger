@@ -6,3 +6,5 @@
 src/
 test/
 !lib/
+coverage
+.istanbul.yml

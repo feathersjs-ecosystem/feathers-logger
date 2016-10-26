@@ -2,3 +2,10 @@ language: node_js
 node_js:
   - 'node'
   - 'iojs'
+before_script:
+- npm install -g codeclimate-test-reporter
+after_script:
+- codeclimate-test-reporter < coverage/lcov.info
+addons:
+  code_climate:
+    repo_token: e596849b49c64c47dd164d10304d03bf9775412bd87ad601613f34b3d7509c76

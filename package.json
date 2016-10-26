@@ -33,9 +33,10 @@
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
     "jshint": "jshint lib/. test/. --config",
-    "mocha": "mocha --recursive test/",
-    "test": "npm run jshint && npm run mocha",
-    "start": "node example/app"
+    "mocha": "mocha --opts mocha.opts",
+    "test": "npm run jshint && npm run coverage",
+    "start": "node example/app",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts"
   },
   "dependencies": {
     "uberproto": "^1.2.0"
@@ -43,6 +44,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "feathers": "~2.0.0",
+    "istanbul": "^1.1.0-alpha.1",
     "jshint": "^2.9.1",
     "mocha": "^2.4.5",
     "morgan": "^1.7.0"
