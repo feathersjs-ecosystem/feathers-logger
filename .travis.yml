@@ -1,16 +1,13 @@
 language: node_js
 node_js:
-- node
-- '6'
-- '4'
-- iojs
-- '0.12'
-- '0.10'
+  - node
+  - '6'
+  - '4'
 sudo: false
 before_script:
-- npm install -g codeclimate-test-reporter
+  - 'npm install -g codeclimate-test-reporter'
 after_script:
-- codeclimate-test-reporter < coverage/lcov.info
+  - 'codeclimate-test-reporter < coverage/lcov.info'
 addons:
   code_climate:
     repo_token: e596849b49c64c47dd164d10304d03bf9775412bd87ad601613f34b3d7509c76
