@@ -26,4 +26,8 @@ describe('Feathers logger', function () {
   it('initializes .error', function () {
     expect(typeof app.error).to.equal('function');
   });
+
+  it('initializes .debug', function () {
+    expect(typeof app.debug).to.equal('function');
+  });
 });
