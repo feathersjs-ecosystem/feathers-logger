@@ -31,6 +31,7 @@ var app = feathers()
 * `app.info()`
 * `app.warn()`
 * `app.error()`
+* `app.debug()`
 
 They have graceful fallback to the [core nodejs console methods](http://nodejs.org/api/stdio.html).
 
