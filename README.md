@@ -1,6 +1,8 @@
 
 # feathers-logger 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs/feathers-logger.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://secure.travis-ci.org/feathersjs/feathers-logger.png?branch=master)](http://travis-ci.org/feathersjs/feathers-logger)
 [![Code Climate](https://codeclimate.com/github/feathersjs/feathers-logger.png)](https://codeclimate.com/github/feathersjs/feathers-logger)
 [![Test Coverage](https://codeclimate.com/github/feathersjs/feathers-logger/badges/coverage.svg)](https://codeclimate.com/github/feathersjs/feathers-logger/coverage)
