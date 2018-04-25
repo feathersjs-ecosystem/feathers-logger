@@ -1,11 +1,15 @@
 # Change Log
 
-## [Unreleased](https://github.com/feathersjs-ecosystem/feathers-logger/tree/HEAD)
+## [v0.3.0](https://github.com/feathersjs-ecosystem/feathers-logger/tree/v0.3.0) (2018-04-25)
+[Full Changelog](https://github.com/feathersjs-ecosystem/feathers-logger/compare/v0.2.3...v0.3.0)
 
-[Full Changelog](https://github.com/feathersjs-ecosystem/feathers-logger/compare/v0.2.3...HEAD)
+**Closed issues:**
+
+- convert to ES6 [\#3](https://github.com/feathersjs-ecosystem/feathers-logger/issues/3)
 
 **Merged pull requests:**
 
+-  Update plugin infrastructure and drop Node 4 support [\#19](https://github.com/feathersjs-ecosystem/feathers-logger/pull/19) ([daffl](https://github.com/daffl))
 - Update mocha to the latest version 🚀 [\#18](https://github.com/feathersjs-ecosystem/feathers-logger/pull/18) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 - Update semistandard to the latest version 🚀 [\#17](https://github.com/feathersjs-ecosystem/feathers-logger/pull/17) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
 - Update mocha to the latest version 🚀 [\#16](https://github.com/feathersjs-ecosystem/feathers-logger/pull/16) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
