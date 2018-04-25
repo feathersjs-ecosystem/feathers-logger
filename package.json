@@ -2,7 +2,7 @@
   "name": "feathers-logger",
   "description": "Simple logging for feathers",
   "version": "0.2.3",
-  "homepage": "https://github.com/feathersjs/feathers-logger",
+  "homepage": "https://github.com/feathersjs-ecosystem/feathers-logger",
   "main": "lib/",
   "keywords": [
     "feathers-plugin",
@@ -13,7 +13,7 @@
   "licenses": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feathersjs/feathers-logger.git"
+    "url": "git://github.com/feathersjs-ecosystem/feathers-logger.git"
   },
   "author": {
     "name": "Feathers contributors",
@@ -22,7 +22,7 @@
   },
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/feathersjs/feathers-logger/issues"
+    "url": "https://github.com/feathersjs-ecosystem/feathers-logger/issues"
   },
   "engines": {
     "node": ">= 6"

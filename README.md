@@ -1,9 +1,9 @@
 # feathers-logger 
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs/feathers-logger.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs-ecosystem/feathers-logger.svg)](https://greenkeeper.io/)
 
-[![Build Status](https://secure.travis-ci.org/feathersjs/feathers-logger.png?branch=master)](http://travis-ci.org/feathersjs/feathers-logger)
-[![Dependency Status](https://img.shields.io/david/feathersjs/feathers-logger.svg?style=flat-square)](https://david-dm.org/feathersjs/feathers-logger)
+[![Build Status](https://secure.travis-ci.org/feathersjs-ecosystem/feathers-logger.png?branch=master)](http://travis-ci.org/feathersjs-ecosystem/feathers-logger)
+[![Dependency Status](https://img.shields.io/david/feathersjs-ecosystem/feathers-logger.svg?style=flat-square)](https://david-dm.org/feathersjs-ecosystem/feathers-logger)
 [![Download Status](https://img.shields.io/npm/dm/feathers-logger.svg?style=flat-square)](https://www.npmjs.com/package/feathers-logger)
 [![Slack Status](http://slack.feathersjs.com/badge.svg)](http://slack.feathersjs.com)
 
@@ -81,7 +81,7 @@ app.log('Server Started');
 ```
 
 ## Examples
-See [example directory](https://github.com/feathersjs/feathers-logger/tree/master/example).
+See [example directory](https://github.com/feathersjs-ecosystem/feathers-logger/tree/master/example).
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using the `npm test`.
@@ -109,4 +109,4 @@ __0.1.0__
 
 Copyright (c) 2018
 
-Licensed under the [MIT license](https://github.com/feathersjs/feathers-logger/blob/master/LICENSE-MIT).
+Licensed under the [MIT license](https://github.com/feathersjs-ecosystem/feathers-logger/blob/master/LICENSE-MIT).
