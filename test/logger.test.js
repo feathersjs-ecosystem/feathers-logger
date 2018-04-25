@@ -1,33 +1,31 @@
-'use strict';
+const expect = require('chai').expect;
+const feathers = require('@feathersjs/feathers');
+const logger = require('../lib/');
 
-var expect = require('chai').expect;
-var feathers = require('feathers');
-var logger = require('../lib/');
+describe('Feathers logger', () => {
+  let app;
 
-describe('Feathers logger', function () {
-  var app;
-
-  before(function () {
+  beforeEach(() => {
     app = feathers().configure(logger());
   });
 
-  it('initializes .log', function () {
+  it('initializes .log', () => {
     expect(typeof app.log).to.equal('function');
   });
 
-  it('initializes .info', function () {
+  it('initializes .info', () => {
     expect(typeof app.info).to.equal('function');
   });
 
-  it('initializes .warn', function () {
+  it('initializes .warn', () => {
     expect(typeof app.warn).to.equal('function');
   });
 
-  it('initializes .error', function () {
+  it('initializes .error', () => {
     expect(typeof app.error).to.equal('function');
   });
 
-  it('initializes .debug', function () {
+  it('initializes .debug', () => {
     expect(typeof app.debug).to.equal('function');
   });
 });

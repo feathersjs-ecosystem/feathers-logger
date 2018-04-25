@@ -1,10 +1,10 @@
-var feathers = require('feathers');
-var morgan = require('morgan');
-var logger = require('../lib');
-var app = feathers();
+const feathers = require('@feathersjs/feathers');
+const morgan = require('morgan');
+const logger = require('../lib');
+const app = feathers();
 
-var userService = {
-  find: function (params) {
+const userService = {
+  find (params) {
     app.log('info', 'Your params are:', { foo: 'bar' });
     app.warn('I\'m warning you... there is an error coming.');
     app.error('Oh noes!!');
@@ -12,7 +12,7 @@ var userService = {
     return Promise.resolve([]);
   },
 
-  setup: function (app) {
+  setup (app) {
     this.app = app;
   }
 };
@@ -20,8 +20,8 @@ var userService = {
 app.configure(logger(morgan({
   format: 'dev'
 })))
-   .configure(feathers.rest())
-   .use('/users', userService);
+  .configure(feathers.rest())
+  .use('/users', userService);
 
 app.listen(3030);
 
