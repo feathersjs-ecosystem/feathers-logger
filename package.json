@@ -33,7 +33,7 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
-    "lint": "eslint-if-supported semistandard --fix",
+    "lint": "semistandard --fix",
     "mocha": "mocha --recursive test/",
     "test": "npm run lint && npm run mocha",
     "start": "node example/app",

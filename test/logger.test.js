@@ -3,7 +3,7 @@ const feathers = require('@feathersjs/feathers');
 const logger = require('../lib/');
 
 describe('Feathers logger', () => {
-  const app;
+  let app;
 
   beforeEach(() => {
     app = feathers().configure(logger());
