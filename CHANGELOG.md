@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.1](https://github.com/feathersjs-ecosystem/feathers-logger/tree/v0.3.1) (2018-05-16)
+[Full Changelog](https://github.com/feathersjs-ecosystem/feathers-logger/compare/v0.3.0...v0.3.1)
+
+**Merged pull requests:**
+
+- \[fix\] app.debug\(\) logs twice [\#20](https://github.com/feathersjs-ecosystem/feathers-logger/pull/20) ([beeplin](https://github.com/beeplin))
+
 ## [v0.3.0](https://github.com/feathersjs-ecosystem/feathers-logger/tree/v0.3.0) (2018-04-25)
 [Full Changelog](https://github.com/feathersjs-ecosystem/feathers-logger/compare/v0.2.3...v0.3.0)
 
