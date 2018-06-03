@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.2](https://github.com/feathersjs-ecosystem/feathers-logger/tree/v0.3.2) (2018-06-03)
+[Full Changelog](https://github.com/feathersjs-ecosystem/feathers-logger/compare/v0.3.1...v0.3.2)
+
+**Merged pull requests:**
+
+- Update uberproto to the latest version 🚀 [\#21](https://github.com/feathersjs-ecosystem/feathers-logger/pull/21) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v0.3.1](https://github.com/feathersjs-ecosystem/feathers-logger/tree/v0.3.1) (2018-05-16)
 [Full Changelog](https://github.com/feathersjs-ecosystem/feathers-logger/compare/v0.3.0...v0.3.1)
 
