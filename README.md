@@ -24,7 +24,7 @@ var app = feathers()
 
 ## Documentation
 
-`Feathers-logger` is just a simple wrapper for any logger so that you can conveniently do `app.log()`. There are 4 methods provided for you to use:
+`Feathers-logger` is just a simple wrapper for any logger so that you can conveniently do `app.log()`. There are 5 methods provided for you to use:
 
 * `app.log()`
 * `app.info()`
