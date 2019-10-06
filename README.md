@@ -1,13 +1,20 @@
 # feathers-logger 
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs-ecosystem/feathers-logger.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://secure.travis-ci.org/feathersjs-ecosystem/feathers-logger.png?branch=master)](http://travis-ci.org/feathersjs-ecosystem/feathers-logger)
-[![Dependency Status](https://img.shields.io/david/feathersjs-ecosystem/feathers-logger.svg?style=flat-square)](https://david-dm.org/feathersjs-ecosystem/feathers-logger)
-[![Download Status](https://img.shields.io/npm/dm/feathers-logger.svg?style=flat-square)](https://www.npmjs.com/package/feathers-logger)
-[![Slack Status](http://slack.feathersjs.com/badge.svg)](http://slack.feathersjs.com)
+
+> __Unmaintained:__ This module is no longer maintained.
 
 > Logging mixin for a Feathers app.
+
+## Migrating
+
+As of October 2019 this module is no longer maintained since it contained only a few lines of redundant code. Applications generated with the latest `@feathersjs/cli` already export a separate `logger.js` file which sets up a normal [Winston Logger](https://github.com/winstonjs/winston) that can be directly required for logging purposes. If you would like logging capabilities available on the application object add
+
+```
+app.logger = logger;
+```
+
+At the end of your `src/app.js` (or `src/app.ts`) file.
 
 ## Getting Started
 
